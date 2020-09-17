@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container mx-auto p-5">
+  <h1>
+    {{ post.title }}
+  </h1>
+  <h2>
+    Written by: {{ post.author }}
+  </h2>
+  <div class="container text-center">
+    <p>{{ post.content}}</p>
+  </div>
+  <a href="/">&larr; back to all posts</a>
+</div>
+
+{% endblock body %}
